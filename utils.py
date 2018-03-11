@@ -42,7 +42,7 @@ class train_data():
         self.filepath = filepath
         assert '.npy' in filepath
         if not os.path.exists(filepath):
-            print("[!] Data file not exists")
+            print("[!] Data file not exists" + filepath)
             sys.exit(1)
 
     def __enter__(self):
